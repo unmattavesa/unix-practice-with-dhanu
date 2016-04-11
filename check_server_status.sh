@@ -1,5 +1,5 @@
 # Write a shell script to check server is up or down
-echo "Enter server IP address :"
+echo "Enter server IP address / hostname :"
 read ip
 ping -q -c3 $ip >> temp.t
 
@@ -12,7 +12,7 @@ fi
 rm -Rf temp.t
 
 
-# Output WITH -q Option
+# PING  Output WITH -q Option
 
 # PING localhost (127.0.0.1): 56 data bytes
 
@@ -22,7 +22,7 @@ rm -Rf temp.t
 
 
 
-# Output WITHOUT -q Option
+# PING Output WITHOUT -q Option
 
 # PING localhost (127.0.0.1): 56 data bytes
 # 64 bytes from 127.0.0.1: icmp_seq=0 ttl=64 time=0.067 ms
